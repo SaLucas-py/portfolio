@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+}
+
+html{scroll-behavior:smooth}
+
+body {
+  background: var(--purple-500);
+}
+
+.line {
+  width: 80%;
+  border-top: 5px solid var(--purple-300);
+  margin: 0 auto;
+}
+
+.title {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-bottom: 3px solid var(--purple-300);
+  margin-bottom: 50px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.about-me-wrapper,
+.skills-wrapper,
+.projects-wrapper {
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid var(--purple-500);
+}
+
+.wpp-link,
+.go-to-link {
+  position: fixed;
+  z-index: 2;
+  bottom: 40px;
+  right: 40px;
+}
+
+.go-to-link {
+  bottom: 110px;
+  right: 45px;
+}
+
+.wpp-link > img {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+  
+  .wpp-link {
+    right: 15px;
+  }
+
+  .go-to-link {
+    bottom: 75px;
+    right: 17px;
+  }
+
+  .go-to-link  > img {
+    width: 30px;
+  }
+
+  .wpp-link > img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 24px;
+  }
+}

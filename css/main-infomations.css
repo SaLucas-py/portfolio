@@ -1,0 +1,153 @@
+.main-informations-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-informations-wrapper h1,
+.main-informations-wrapper h2,
+.main-informations-wrapper h3 {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main-informations-wrapper h1 {
+  font-size: 90px;
+}
+.main-informations-wrapper h2 {
+  /* position: absolute; */
+  font-size: 48px;
+  border-bottom: 3px solid var(--purple-300);
+  animation: blinkCursor 500ms infinite normal, typing 3s steps(40) 1s normal;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline;
+}
+
+.main-informations-wrapper h3 {
+  color: var(--gray);
+  font-family: 'Magra', sans-serif;
+  border-bottom: 3px solid var(--purple-300);
+}
+
+.contacts-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  justify-content: space-around;
+}
+
+.mail-image {
+  object-fit: contain;
+}
+
+.main-informations-wrapper > img {
+  animation: desloca 1s infinite alternate;
+}
+
+@keyframes desloca {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 485px;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right: 3px solid var(--white);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-informations-wrapper > img {
+    width: 600px;
+  }
+
+  .main-informations-wrapper h1 {
+    font-size: 60px;
+  }
+
+  .main-informations-wrapper h2 {
+    font-size: 36px;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 364px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-informations-wrapper > img {
+    width: 400px;
+  }
+
+  .main-informations-wrapper h1 {
+    font-size: 48px;
+  }
+
+  .main-informations-wrapper h2 {
+    font-size: 24px;
+  }
+
+  .contacts-wrapper img {
+    width: 30px;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 243px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main-informations-wrapper > img {
+    width: 250px;
+  }
+
+  .main-informations-wrapper h1 {
+    font-size: 24px;
+  }
+
+  .main-informations-wrapper h2 {
+    font-size: 18px;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 183px;
+    }
+  }
+}

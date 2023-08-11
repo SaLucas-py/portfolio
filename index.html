@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <title>Portifólio</title>
+  </head>
+  <body>
+    <main>
+      <div class="links-wrapper">
+        <a class="go-to-link" href="/">
+          <img src="./imgs/arrow-to-top.png" alt="">
+        </a>
+        <a class="wpp-link" href="https://api.whatsapp.com/send?phone=5521998235119" target="_blank">
+          <img src="./imgs/whatsapp_icon.png" alt="">
+        </a>
+      </div>
+      <header class="header-wrapper">
+        <img src="imgs/header_icon.png" alt="icone do header">
+        <nav class="navbar-wrapper">
+          <button class="menu-mobile-button">
+            <img src="imgs/navbar_icon.png" alt="icone menu mobile">
+          </button>
+          <ul class="nav-list">
+            <li>
+              <a  class="nav-item" href="#about">Sobre</a>
+            </li>
+            <li>
+              <a  class="nav-item" href="#skills">Skills</a>
+            </li>
+            <li>
+              <a  class="nav-item" href="#projects">Projeto</a>
+            </li>
+            <li>
+              <a  class="nav-item" href="#contacts">Mais</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="main-informations-wrapper">
+        <img src="imgs/main_icon.png" alt="icone principal">
+        <h1>Lucas Sá de Lima</h1>
+        <h2>Desenvolvedor Python</h2>
+        <div>
+          <h3>Back-end | RPA</h3>
+        </div>
+        <div class="contacts-wrapper">
+          <a target="_blank" href="mailto:lucas.sadelima16@gmail.com">
+            <img class="mail-image" src="imgs/mail_icon.png" alt="icone do email">
+          </a>
+          <a target="_blank" href="//www.linkedin.com/in/lucas-s%C3%A1-4063261bb/">
+            <img src="imgs/linkedin_icon.png" alt="icone do email">
+          </a>
+          <a target="_blank" href="https://github.com/SaLucas-py">
+            <img src="imgs/github_icon.png" alt="icone do email">
+          </a>
+        </div>
+      </section>
+      <div class="line"></div>
+      <section class="about-me-wrapper" id="about">
+        <h2 class="title">Sobre mim</h1>
+          <div class="about-me-content">
+            <div class="about-me-text">
+              <p>
+                Sou estudante de Engenharia de Computação, atualmente buscando uma oportunidade de estágio como desenvolvedor Python, focado na parte de automação. Tenho paixão pela programação e estou ansioso para aplicar meus conhecimentos em um ambiente prático.
+              </p>
+            </div>
+            <img src="imgs/about_icon.png" alt="icone do sobre">
+          </div>
+        </section>
+        <div class="line"></div>
+        <section class="skills-wrapper" id="skills">
+          <h2 class="title">Skills</h1>
+            <div class="container">
+              <button class="arrow-left control" aria-label="Previous image">◀</button>
+              <button class="arrow-right control" aria-label="Next Image">▶</button>
+              <div class="carousel-wrapper">
+                <div class="carousel-itens">
+                  <div class="item current-item">
+                    <h2>Python</h2>
+                    <img src="imgs/python_icon.png" alt="">
+                  </div>
+                  <div class="item current-item">
+                    <h2>Selenium</h2>
+                    <img src="imgs/selenium_icon.png" alt="">
+                  </div>
+                  <div class="item current-item">
+                    <h2>TkInter</h2>
+                    <img src="imgs/python_icon.png" alt="">
+                  </div>
+                  <div class="item current-item">
+                    <h2>Flask</h2>
+                    <img src="imgs/flask_icon.png" alt="">
+                  </div>
+                  <div class="item current-item">
+                    <h2>SQLite</h2>
+                    <img src="imgs/sql_icon.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section class="projects-wrapper" id="projects">
+          <h2 class="title">Projetos</h2>
+          <div class="lazy slider">
+            <div class="item2">
+              <h2>Clima Friburgo</h2>
+              <p>Utilizando a API OpenWheater, selenium e twitter eu desenvolvi um “bot” que a cada 30 minutos postava as condições climáticas da cidade de Nova Friburgo. No começo a aplicação rodava a partir da API do Twitter.</p>
+              <a target= "_blank" href="https://twitter.com/climafriburgo" class="projects-button">
+                <span>Mais detalhes</span>
+                
+              </a>
+            </div>
+            <div class="item2">
+              <h2>Xet da Shopee</h2>
+              <p>Utilizando a plataforma da Shopee de afiliados, eu desenvolvi um bot que captura os produtos e posta no twitter com o meu link de afiliado. </p>
+              <a target="_blank" href="https://twitter.com/ShopeeXet" class="projects-button">
+                <span>Mais detalhes</span>
+                
+              </a>
+            </div>
+            <div class="item2">
+              <h2>Raspagem de dados - Magazine Luiza</h2>
+              <p>Realizei uma raspagem de dados no site do Magazine Luiza pegando todas informações de determinado produto, no caso um iphone, e jogando numa planilha de Excel. </p>
+              <a target="_blank" href="https://github.com/SaLucas-py/Raspagem-de-dados-com-Selenium" class="projects-button">
+                <span>Mais detalhes</span>
+                
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="line"></div>
+        <section class="more-wrapper" id="contacts">
+          <h2 class="title">Mais</h2>
+          <div class="more-informations-wrapper main-informations-wrapper">
+            <a class="download-button-wrapper projects-button" href="curriculo.pdf" download>
+              <span>Baixar currículo</span>
+              <img src="imgs/more_icon.png" alt="">
+            </a>
+            <img src="imgs/resume_icon.png" alt="">
+          </div>
+        </section>
+        <footer class="footer-wrapper">
+          <div class="contacts-wrapper-footer">
+            <a target="_blank" href="mailto:lucas.sadelima16@gmail.com">
+              <img class="mail-image" src="imgs/mail_icon.png" alt="icone do email">
+            </a>
+            <a target="_blank" href="//www.linkedin.com/in/lucas-s%C3%A1-4063261bb/">
+              <img src="imgs/linkedin_icon.png" alt="icone do email">
+            </a>
+            <a target="_blank" href="https://github.com/SaLucas-py">
+              <img src="imgs/github_icon.png" alt="icone do email">
+            </a>
+          </div>
+        </footer>
+    </main>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script defer src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+.about-me-content {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 100%;
+}
+
+.about-me-text {
+    background: var(--purple-300);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.about-me-text > p {
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about-me-content > img {
+    width: 500px;
+}
+
+@media screen and (max-width: 1290px) {
+    .about-me-content {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-me-content > img {
+        width: 300px;
+    }
+    
+    .about-me-text > p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .about-me-content > img {
+        width: 200px;
+    }
+    
+    .about-me-text > p {
+        font-size: 16px;
+    }
+}

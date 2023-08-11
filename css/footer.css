@@ -1,0 +1,20 @@
+.footer-wrapper {
+    background: var(--purple-300);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.contacts-wrapper-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .contacts-wrapper-footer img {
+        width: 30px;
+    }
+}
